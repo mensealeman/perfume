@@ -39,8 +39,13 @@ body {
 }
 
 .contenedor {
-    width: 343px;
     height: 613px;
+    width: 343px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    overflow: hidden;
 }
 
 /*--------------- Img --------------- */
@@ -56,18 +61,89 @@ contenedor-img: 343px x 241px
     background-image: url(../images/image-product-mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 1rem 1rem 0 0 ;
-    
 }
 
 /*-------------- Texto -------------*/
 
 .contenedor-text {
+    width: 343px;
+    height: 372px;
     background-color: var(--White);
-    border-radius: 0 0 1rem 1rem;
 }
 
-.contenedor-text h3 {
-    margin-top: 0rem;
+.text {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+}
 
+.text h3 {
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    font-weight: lighter;
+    color: var(--DarkGrayIshBlue);
+}
+
+.text h1 {
+    font-family: 'Fraunces', serif;
+    margin-top: 0rem;
+}
+
+.text p {
+    color: var(--DarkGrayIshBlue);
+    font-size: 1.4rem;
+    font-weight: lighter;
+    line-height: 2rem;
+}
+
+.price-text {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+
+    display: flex;
+    flex-direction: row;
+
+    margin-bottom: ;
+}
+
+.price1 {
+    font-size: 2.2rem;
+    color: var(--DarkCyan);
+    font-family: 'Fraunces', serif;
+}
+
+.price-text .price1 h2 {
+    margin-top: 1rem;
+    
+}
+
+.price2 {
+    margin-top: 0.2rem;
+    margin-left: 2rem;
+    font-size: smaller;
+    font-weight: lighter;
+    color: var(--DarkGrayIshBlue);
+}
+
+/* ------------------ Botón ------------------- */
+
+.boton-icono {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+}
+.boton {
+    text-align: center;
+}
+.btn {
+    border-radius: 1rem;
+    font-weight: bold;
+    background-color: var(--DarkCyan);
+    text-decoration: none;
+    border: none;
+    color: var(--White);
+    padding: 1.4rem 11rem;
+    
 }
