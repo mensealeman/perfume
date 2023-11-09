@@ -1,0 +1,73 @@
+/*
+contenedor img y texto: 343px x 613px
+contenedor-img: 343px x 241px
+
+*/
+
+
+:root {
+    --DarkCyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --VeryDarkBlue: hsl(212, 21%, 14%);
+    --DarkGrayIshBlue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing:border-box;
+}
+
+*, *:before, *:after{ /*Esto hace que no cambie el tamaño de las cajas*/
+    box-sizing: inherit;
+} 
+
+/* -------------- Body -------------- */
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    background-color: var(--Cream);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+.contenedor {
+    width: 343px;
+    height: 613px;
+}
+
+/*--------------- Img --------------- */
+
+/*
+contenedor img y texto: 343px x 613px
+contenedor-img: 343px x 241px
+*/
+
+.img {
+    width: 343px;
+    height: 241px;
+    background-image: url(../images/image-product-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1rem 1rem 0 0 ;
+    
+}
+
+/*-------------- Texto -------------*/
+
+.contenedor-text {
+    background-color: var(--White);
+    border-radius: 0 0 1rem 1rem;
+}
+
+.contenedor-text h3 {
+    margin-top: 0rem;
+
+}
