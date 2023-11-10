@@ -98,13 +98,12 @@ contenedor-img: 343px x 241px
 }
 
 .price-text {
+    height: 65.31px;;
     margin-left: 2.5rem;
     margin-right: 2.5rem;
 
     display: flex;
     flex-direction: row;
-
-    margin-bottom: ;
 }
 
 .price1 {
@@ -114,8 +113,7 @@ contenedor-img: 343px x 241px
 }
 
 .price-text .price1 h2 {
-    margin-top: 1rem;
-    
+    margin-top: 1rem;  
 }
 
 .price2 {
@@ -144,6 +142,60 @@ contenedor-img: 343px x 241px
     text-decoration: none;
     border: none;
     color: var(--White);
-    padding: 1.4rem 11rem;
-    
+    padding: 1.4rem 9rem;
+    cursor: pointer;
+}
+.svg {
+    margin-right: 1rem;
+}
+
+/* ----------------- Desktop ---------------- */
+/*
+contenedor: 600px x 450px
+img: 300px x 450px
+text: 300px x 450px
+*/
+
+@media (min-width:1000px){
+
+    .contenedor {
+        width: 600px;
+        height: 450px;
+
+        display: flex;
+        flex-direction: row;
+    }
+    .img {
+        width: 300px;
+        height: 450px;
+        background-image: url(../images/image-product-desktop.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+    .contenedor-text {
+        width: 300px;
+        height: 450px;
+        margin-right: 4rem;
+        border-radius: 0 1rem 1rem 0;
+    }
+    .btn {
+        border-radius: 1rem;
+        font-weight: bold;
+        background-color: var(--DarkCyan);
+        text-decoration: none;
+        border: none;
+        color: var(--White);
+        padding: 1.4rem 5.3rem;
+        cursor: pointer;
+    }
+    .price-text {
+        margin-bottom: 1rem;
+    }
+    .contenedor-text {
+        padding-top: 1rem;
+    }
+    .contenedor-text h3 {
+        padding-bottom: 1rem;
+    }
 }
